@@ -19,6 +19,8 @@ $wa2=$env:webapp2
 $wa1SP=$wa1 + 'SP'
 $wa2SP=$wa2 + 'SP'
 
+Write-Host "RG $RGN env $env:appResourceGroup"
+
 $rg = Get-AzureRmResourceGroup -Name $RGN -ErrorAction Ignore
 if ( ! $rg ) {
   $rg = New-AzureRmResourceGroup -Name $RGN -Location $location
