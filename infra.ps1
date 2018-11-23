@@ -1,4 +1,4 @@
-#Set-PSDebug -Trace 2
+Set-PSDebug -Trace 2
 
 $RGN                  = $env:appResourceGroup
 $location            = "West Europe"
